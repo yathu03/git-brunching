@@ -27,10 +27,6 @@ const LandingPage = (props) => {
     changePath("/restaurant", history);
   };
 
-  const toReviews = () => {
-    changePath("/reviews", history);
-  };
-
   return (
     <div className={style.landingPageContainer}>
       <div className={style.header}>

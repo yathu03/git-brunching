@@ -12,7 +12,6 @@ import Button from "@material-ui/core/Button";
 import {makeStyles} from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import {Rating} from '@material-ui/lab';
-import getReviewById from "../edit/services/getReviewById";
 
     const ReviewPopupButton = ({restaurant}) => {
         const [open, setOpen] = React.useState(false);
@@ -60,12 +59,6 @@ import getReviewById from "../edit/services/getReviewById";
         const [value, setValue] = React.useState(2);
         const [hover, setHover] = React.useState(-1);
         const classes = useStyles();
-
-        const getReview = (restaurantId) => {
-            getReviewById(restaurantId).then((r) => {
-              const data = r.result[0];
-            });
-        };
     
         return (
         <>
